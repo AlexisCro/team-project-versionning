@@ -13,4 +13,9 @@ jobs:
         with:
           root: ./
           log_level: WARNING
-          skip_git_check: false  # Assurez-vous que ce paramètre est défini sur false
+          skip_git_check: false
+      - name: Save HTML5 validation errors
+        run: echo "${{ steps.html5validation.outputs.errors }}" > html5_errors.txt
+
+      - name: Display HTML5 validation errors
+        run: cat html5_errors.txt
