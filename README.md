@@ -52,7 +52,6 @@ Finally to create the issue please fill these fields
 2. Describe why we need to do this
 3. Assign yourself to the issue
 4. Add adequat label (your label + type issue label (doc, feature, etc))
-5. Link to our project
 6. Add to the milestone
 
 #### Our project board
@@ -83,6 +82,9 @@ You need to add some images if you can to show what you have done.
 ```
 
 Finally you need to add reviewers to the PR. To do that you need to click on Reviewers and add the reviewer.
+
+### Check after push
+After push your code you need to check if the html5validator is ok. To do that you need to go at the end of the page (under reviews). You'll see a check of html5validator. If it's ok ythe branch can be merged. If not you need to fix the error (click on details), resolve and push again.
 
 ## Commitizen
 
