@@ -1,18 +1,4 @@
-name: Validate Code
-
-on:
-  pull_request:
-    branches:
-      - develop
-
-jobs:
-  validate:
-    runs-on: ubuntu-latest
-
-    steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
-
-    - name: Validate HTML with W3C Validator
-      run: |
-        find . -name "*.html" -exec curl -H "Content-Type: text/html; charset=utf-8" --data-binary "@{}" "https://validator.w3.org/nu/?out=json" \;
+- name: HTML5 Validator
+  uses: Cyb3r-Jak3/html5validator-action@master
+  with:
+    root: ./
