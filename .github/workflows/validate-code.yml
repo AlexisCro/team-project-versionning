@@ -21,5 +21,8 @@ jobs:
     - name: Install dependencies
       run: npm install
 
+    -name: Install validate HTML and CSS
+      run: npm install html-validate@latest
+
     - name: Validate HTML and CSS
       run: npx html-validate "*.html" "assets/css/*.css"
