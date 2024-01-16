@@ -1,0 +1,16 @@
+{
+  "name": "team-project-versionning",
+  "version": "1.0.0",
+  "description": "We will create a static website of video game e-market.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+}
