@@ -83,3 +83,69 @@ You need to add some images if you can to show what you have done.
 ```
 
 Finally you need to add reviewers to the PR. To do that you need to click on Reviewers and add the reviewer.
+
+## Commitizen
+
+### Install NPM
+You need to install NPM if you don't have it.<br>
+[Download NPM here](https://nodejs.org/en/download)
+
+### Install Commitizen
+On your command terminal run :
+```sh
+npm install -g commitizen
+```
+You need to install an CZ adapter :
+```sh
+npm install -g cz-conventional-changelog
+```
+
+### Configuration
+If you don't have a `package.json`, create it with :
+```sh
+npm init
+```
+Now add on the file :
+```js
+"config": {
+  "commitizen": {
+    "path": "cz-conventional-changelog"
+  }
+}
+```
+
+### How to use it ?
+Now you can use Commitizen.<br>
+Use this command line instead of `git commit` :
+```sh
+git cz
+```
+
+### How it work ?
+After do th command line, this happened :<br>
+1. Select the type of change :<br>
+![Alt text](image-5.png)
+2. Add the detail you need of your commit : (picture is for showing the question and the process)<br>
+![Alt text](image-6.png)
+After this this, your commit is done.<br>
+You can push normally your code.
+
+## If you are on Mac OS for install Commitizen
+You need to install Commitizen with homebrew.<br>
+```sh
+brew install commitizen
+```
+
+### How to use it ?
+Now you can use Commitizen.<br>
+Use this command line instead of `git commit` :
+```sh
+cz commit
+```
+
+### How it work ?
+After do th command line, this happened :<br>
+1. Select the type of change :<br>
+![Alt text](image-7.png)
+2. Add the detail you need of your commit : (picture is for showing the question and the process)<br>
+![Alt text](image-6.png)
