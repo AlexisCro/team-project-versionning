@@ -22,4 +22,4 @@ jobs:
       run: npm install
 
     - name: Validate HTML and CSS
-      run: npx html-validate "../../*.html" "../../assets/css/*.css"
+      run: npx html-validate "*.html" "assets/css/*.css"
