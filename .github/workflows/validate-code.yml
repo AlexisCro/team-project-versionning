@@ -13,13 +13,7 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
 
-    - name: Setup Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: '14'
-
-    - name: Install dependencies
-      run: npm install html-validate@latest
-
-    - name: Validate HTML and CSS
-      run: npx html-validate "*.html" "assets/css/*.css"
+    - name: Validate HTML with W3C Validator
+      run: |
+        npm install -g w3c-html-validator-cli
+        find . -name "*.html" -print0 | xargs -0 w3c-validator-cli
