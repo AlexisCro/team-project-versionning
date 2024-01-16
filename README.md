@@ -61,4 +61,25 @@ Finally to create the issue please fill these fields
 As you can see we have different columns in our project board. Each column identify an issue status so please put you issues in the correct column according to their status. 
 
 #### Our PR
-TODO by clement
+You need to link the issue to the PR. To do that you need to add in the PR description the following line :
+
+```md
+# Num of the issue
+#num-issue
+```
+
+You need also to describe what you have done in the PR.
+
+```md
+# Description
+lorem ipsum dolor sit amet
+```
+
+You need to add some images if you can to show what you have done.
+
+```md
+# Screenshots
+![image](image.png)
+```
+
+Finally you need to add reviewers to the PR. To do that you need to click on Reviewers and add the reviewer.
