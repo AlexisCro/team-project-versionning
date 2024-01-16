@@ -17,7 +17,7 @@ These configuration are set with git flow, so to use it please follow these step
 - choose main for production
 - choose develop for integration
 - 
-![git flow](image.png)
+![git flow](/assets/images/img/readme/image.png)
 
 
 **Warning : For documentation branch you can't use git flow so follow these step**
@@ -41,13 +41,13 @@ Each modification in the project need an issue and a PR (Pull-Request). And each
 
 #### Create an issue
 In GITHUB click on Issues
-![issue tab](image-1.png)
+![issue tab](/assets/images/img/readme/image-1.png)
 
 Then you'll get this page so click on New issue
-![new issue](image-2.png)
+![new issue](/assets/images/img/readme/image-2.png)
 
 Finally to create the issue please fill these fields
-![create issue](image-3.png)
+![create issue](/assets/images/img/readme/image-3.png)
 1. Add title to the issue following our convention (feature/ , doc/ , etc...)
 2. Describe why we need to do this
 3. Assign yourself to the issue
@@ -56,7 +56,7 @@ Finally to create the issue please fill these fields
 6. Add to the milestone
 
 #### Our project board
-![board](image-4.png)
+![board](/assets/images/img/readme/image-4.png)
 
 As you can see we have different columns in our project board. Each column identify an issue status so please put you issues in the correct column according to their status. 
 
@@ -79,7 +79,7 @@ You need to add some images if you can to show what you have done.
 
 ```md
 # Screenshots
-![image](image.png)
+![image](/assets/images/img/readme/image.png)
 ```
 
 Finally you need to add reviewers to the PR. To do that you need to click on Reviewers and add the reviewer.
