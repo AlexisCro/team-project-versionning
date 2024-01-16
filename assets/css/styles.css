@@ -10947,7 +10947,11 @@ header.masthead {
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
+<<<<<<< HEAD
   background-image: url("../images/img/logos/banniere.png");
+=======
+  background-image: url("../images/img/header-bg.jpg");
+>>>>>>> 0d9a3f7 (Import website and change paths (#1))
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
