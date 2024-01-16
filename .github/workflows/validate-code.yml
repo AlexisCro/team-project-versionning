@@ -15,5 +15,4 @@ jobs:
 
     - name: Validate HTML with W3C Validator
       run: |
-        npm install -g w3c-html-validator-cli
-        find . -name "*.html" -print0 | xargs -0 w3c-validator-cli
+        find . -name "*.html" -exec curl -H "Content-Type: text/html; charset=utf-8" --data-binary "@{}" "https://validator.w3.org/nu/?out=json" \;
