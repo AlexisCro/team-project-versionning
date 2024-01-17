@@ -22,7 +22,13 @@ These configuration are set with git flow, so to use it please follow these step
 - run `git flow init`
 - choose main for production
 - choose develop for integration
+<<<<<<< HEAD
 - ![git flow](/assets/images/img/readme/image-0.png)
+=======
+- 
+![git flow](/assets/images/img/readme/image-0.png)
+
+>>>>>>> 013be2b (docs(readme): update readme with resolve conflicts (#31))
 
 **Warning : For documentation branch you can't use git flow so follow these step**
 
@@ -172,6 +178,7 @@ git cz
 
 ### How it work ?
 
+<<<<<<< HEAD
 After do th command line, this happened :<br>
 
 1. Select the type of change :<br>
@@ -183,6 +190,9 @@ After do th command line, this happened :<br>
 
 ### If you are on Mac OS for install Commitizen
 
+=======
+### If you are on Mac OS for install Commitizen
+>>>>>>> 013be2b (docs(readme): update readme with resolve conflicts (#31))
 You need to install Commitizen with homebrew.<br>
 
 ```sh
@@ -205,6 +215,7 @@ After do th command line, this happened :<br>
 1. Select the type of change :<br>
    ![Alt text](image-7.png)
 2. Add the detail you need of your commit : (picture is for showing the question and the process)<br>
+<<<<<<< HEAD
    ![Alt text](image-6.png)
 
 ## Manage conflicts
@@ -236,4 +247,33 @@ Follow these steps to resolve them :
 - Check what is the correct and functional code highlighted by your editor and git and remove or adapt code as it's needed.
 - Then to mark your resolve run `git add <file-resolve>`
 - If all conflict are resolved run `git rebase --continue` in the case of a rebase.
+=======
+![Alt text](image-6.png)
+
+## Manage conflicts
+Sometimes when you will pull the develop branch and rebase develop on your other branches to up to date them you could meet conflicts. 
+
+### How to manage and resolve conflicts ? 
+When you will do the rebase or your update of your branch you could have a message like this 
+![conflict message](assets/images/img/readme/conflict-error.png)
+
+Follow these steps to resolve them :
+- run `git status`
+- see file both modified
+- go to file with your editor
+- you should see something like this 
+![display confllict](assets/images/img/readme/conflict.png)
+Conflict are highlighted by 
+```bash
+<<<<HEAD 
+  ... 
+====
+  ... 
+>>>>>>ID commit
+```
+
+- Check what is the correct and functional code highlighted by your editor and git and remove or adapt code as it's needed. 
+- Then to mark your resolve run `git add <file-resolve>`
+- If all conflict are resolved run `git rebase --continue` in the case of a rebase. 
+>>>>>>> 013be2b (docs(readme): update readme with resolve conflicts (#31))
 - Then to push on tthe remote repository you will need to run `git push --force-with-lease` instead of `git push`
