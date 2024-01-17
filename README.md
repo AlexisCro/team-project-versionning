@@ -17,7 +17,7 @@ These configuration are set with git flow, so to use it please follow these step
 - choose main for production
 - choose develop for integration
 - 
-![git flow](/assets/images/img/readme/image.png)
+![git flow](/assets/images/img/readme/image-0.png)
 
 
 **Warning : For documentation branch you can't use git flow so follow these step**
@@ -133,7 +133,7 @@ After do th command line, this happened :<br>
 After this this, your commit is done.<br>
 You can push normally your code.
 
-## If you are on Mac OS for install Commitizen
+### If you are on Mac OS for install Commitizen
 You need to install Commitizen with homebrew.<br>
 ```sh
 brew install commitizen
@@ -152,3 +152,30 @@ After do th command line, this happened :<br>
 ![Alt text](image-7.png)
 2. Add the detail you need of your commit : (picture is for showing the question and the process)<br>
 ![Alt text](image-6.png)
+
+## Manage conflicts
+Sometimes when you will pull the develop branch and rebase develop on your other branches to up to date them you could meet conflicts. 
+
+### How to manage and resolve conflicts ? 
+When you will do the rebase or your update of your branch you could have a message like this 
+![conflict message](assets/images/img/readme/conflict-error.png)
+
+Follow these steps to resolve them :
+- run `git status`
+- see file both modified
+- go to file with your editor
+- you should see something like this 
+![display confllict](assets/images/img/readme/conflict.png)
+Conflict are highlighted by 
+```bash
+<<<<HEAD 
+  ... 
+====
+  ... 
+>>>>>>ID commit
+```
+
+- Check what is the correct and functional code highlighted by your editor and git and remove or adapt code as it's needed. 
+- Then to mark your resolve run `git add <file-resolve>`
+- If all conflict are resolved run `git rebase --continue` in the case of a rebase. 
+- Then to push on tthe remote repository you will need to run `git push --force-with-lease` instead of `git push`
