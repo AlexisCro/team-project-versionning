@@ -14,3 +14,4 @@ jobs:
           root: ./
           log_level: WARNING
           skip_git_check: false
+          blacklist: ../../pages/*
