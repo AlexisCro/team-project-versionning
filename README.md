@@ -108,6 +108,8 @@ Finally you need to add reviewers to the PR. To do that you need to click on Rev
 After push your code you need to check if the html5validator is ok. To do that you need to go at the end of the page (under reviews). You'll see a check of html5validator. If it's ok the branch can be merged. If this is not the case you need to fix the error (click on details), resolve and push again.
 ![image](./assets/images/img/readme/image-5.PNG)
 
+If you want to exclude some files for the check you can write `blacklist:` with the name of folder/file like this : `exclude_folder`
+
 Here the [documentation](https://pypi.org/project/html5validator/)
 
 #### How to install locally
