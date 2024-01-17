@@ -15,73 +15,27 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="assets/css/styles.css" rel="stylesheet" />
+        <script src="./assets/js/split-page.js"></script>
     </head>
     <body id="page-top">
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-            <div class="container">
-                <a class="navbar-brand" href="#page-top"><img src="assets/images/img/logos/logo-navbar-brand.png" style="height: 60px;" alt="logo navbar" /></a>
-                <a href="./index.html">
-                  <img src="assets/images/img/logos/england-flag.png" style="width: 70px;" alt="england flag to change locale">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                    <i class="fas fa-bars ms-1"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#about">A propos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#team">Equipe</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- Masthead-->
-        <header class="masthead">
-            <div class="container">
-                <div class="masthead-subheading text-black" style="font-weight: bolder;">Bienvenue dans notre studio!</div>
-                <div class="masthead-heading text-uppercase text-black">C'est bon de vous rencontrer</div>
-                <a class="btn btn-primary btn-xl text-uppercase text-black" href="#services">Dîtes m'en plus !</a>
-            </div>
-        </header>
+        <div id="navbar-fr">
+          <script>
+            renderContent('navbar/navbar-fr', 'navbar-fr')
+          </script>
+        </div>
+        <!-- Masterheader -->
+        <div id="masterheader-fr">
+          <script>
+            renderContent('masterheader/masterheader-fr', 'masterheader-fr')
+          </script>
+        </div>
         <!-- Services-->
-        <section class="page-section" id="services">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Services</h2>
-                    <h3 class="section-subheading text-muted">Ce que nous fournissons ? </h3>
-                </div>
-                <div class="row text-center">
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">E-Commerce</h4>
-                        <p class="text-muted">Nous fournissons un site e-commerce proposant nos produits et créations</p>
-                    </div>
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">Conception crossplatform</h4>
-                        <p class="text-muted">Notre team possède les connaissances pour vour fournir des produits utilisables sur chaque plateformes selon vos besoins</p>
-                    </div>
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">Sécurité</h4>
-                        <p class="text-muted">La sécurité est un point important de la production de nos créations. Nous avons ds experts de la sécurité au sein de notre équipe pour répondre à ce besoin.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <div id="services-fr">
+          <script>
+            renderContent('services/services-fr', 'services-fr')
+          </script>
+        </div>
         <!-- Portfolio Grid-->
         <section class="page-section bg-light" id="portfolio">
             <div class="container">
@@ -158,67 +112,11 @@
             </div>
         </section>
         <!-- About-->
-        <section class="page-section" id="about">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">A propos</h2>
-                    <h3 class="section-subheading text-muted">En savoir plus.</h3>
-                </div>
-                <ul class="timeline">
-                    <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/images/img/about/1.jpg" alt="..." /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>2009-2011</h4>
-                                <h4 class="subheading">Nos humbles débuts</h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted">Nous avons commencé avec une équipe de passioné avec des intérêts commun : qualité et fun</p></div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/images/img/about/2.jpg" alt="..." /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>March 2011</h4>
-                                <h4 class="subheading">Une agence est née</h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted">Après quelques projet, c'est une entreprise qui naît</p></div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/images/img/about/3.jpg" alt="..." /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>December 2015</h4>
-                                <h4 class="subheading">Transition vers le multi-service</h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted">Victime de notre succès nous grandissons</p></div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/images/img/about/4.jpg" alt="..." /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>July 2020</h4>
-                                <h4 class="subheading">Phase 2 Expansion</h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted">Recrutement, formation et croissement de notre clientèle cible.</p></div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image">
-                            <h4>
-                                Participer
-                                <br />
-                                A notre
-                                <br />
-                                Histoire!
-                            </h4>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
+        <div id="about-fr">
+          <script>
+            renderContent('about/about-fr', 'about-fr')
+          </script>
+        </div>
         <!-- Team-->
         <section class="page-section bg-light" id="team">
             <div class="container">
