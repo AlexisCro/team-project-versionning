@@ -225,15 +225,11 @@ Sometimes when you will pull the develop branch and rebase develop on your other
 
 #### First problem
 
-The first problem encountered was when I wanted to retrieve the latest updates from the "develop" branch, and then rebase on my
-Branch `feature/edit-third-slide`. Which I was working on. I handled conflicts poorly. And so there were too many problems on the page because it had doubled a lot of lines and badly indented all the code. I was therefore forced to recreate a v2 branch `feature/modification-third-slide-v2` to start again without making errors in conflicts.
+The first problem encountered was when I wanted to retrieve the latest updates from the "develop" branch, and then rebase on my branch `feature/edit-third-slide`. Which I was working on. I handled conflicts poorly. And so there were too many problems on the page because it had doubled a lot of lines and badly indented all the code. I was therefore forced to recreate a v2 branch `feature/modification-third-slide-v2` to start again without making errors in conflicts.
 
 #### Second problem
 
-the second problem encountered was when creating the second branch: `feature/modification-third-slide-v2`.
-After doing a `git pull` on my `develop` branch locally. Then I did a rebase of develop on my branch `feature/modification-third-slide-v2` `git rebase develop` and I did the rebase incorrectly which created a problem on my branch develop and my branch dev.
-Following an analysis this created big problems on my develop branch.
-Which forced me to delete my local repository and recreate it with `git clone`
+the second problem encountered was when creating the second branch: `feature/modification-third-slide-v2`. After doing a `git pull` on my develop branch locally. Then I did a rebase of develop on my branch `feature/modification-third-slide-v2` `git rebase develop` and I did the rebase incorrectly which created a problem on my branch develop and my branch dev. Following an analysis this created big problems on my develop branch. Which forced me to delete my local repository and recreate it with `git clone`
 
 ### How to manage and resolve conflicts ?
 
