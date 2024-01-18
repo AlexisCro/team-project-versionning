@@ -333,10 +333,3 @@ After the release step we deployed our main branch from GITHUB pages.
 ### Sprint cycle
 
 ![sprint cycle](./assets/images/img/readme/sprint-cycle.png)
-
-## Problem encountered
-
-### First problem
-
-The first problem encountered was when I wanted to retrieve the latest updates from the "develop" branch, and then rebase on my
-`feature/modification-third-slide` branch. That I was working on.I handled conflicts poorly. And as a result there were too many problems and therefore I was forced to recreate a v2 branch `feature/modification-third-slide-v2` to start again without making any errors in the conflicts.
